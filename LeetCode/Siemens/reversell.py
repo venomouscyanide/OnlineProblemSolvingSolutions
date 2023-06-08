@@ -40,10 +40,17 @@ def display(head):
 
 
 def run(head):
-    pass
+    prev = None
+    current = head
+    while current:
+        nextt = current.next
+        current.next = prev
+        prev = current
+        current = nextt
+    return prev
 
 
 if __name__ == '__main__':
-    list_of_numbers = [1, 2, 4]
+    list_of_numbers = [1, 5]
     head = create_ll(list_of_numbers)
-    display(head)
+    display(run(head))
