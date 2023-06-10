@@ -1,6 +1,5 @@
 def selection_sort(arr):
     for i in range(len(arr)):
-
         j = i + 1
         largest = i
         while j < len(arr):
