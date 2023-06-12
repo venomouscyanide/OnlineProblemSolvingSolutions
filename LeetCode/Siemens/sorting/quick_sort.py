@@ -1,4 +1,4 @@
-LeetCode/Siemens/sorting/quick_sort.py# currently descending order
+# currently descending order
 def quick_sort_helper(arr, first, last):
     if first < last:
         pivot_index = quick_sort(arr, first, last)
